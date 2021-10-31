@@ -2,7 +2,7 @@
 
 function consultar() {
   $.ajax({
-    url: "http://localhost:8080/api/Room/all",
+    url: "http://129.151.97.16:8080/api/Room/all",
     type: "GET",
     datatype: "JSON",
     success: function (response) {
@@ -52,7 +52,7 @@ function guardar() {
     dataType: 'json',
     data: dataToSend,
     contentType: 'application/json',
-    url: "http://localhost:8080/api/Room/save",
+    url: "http://129.151.97.16:8080/api/Room/save",
     type: 'POST',
 
     success: function (response) {
@@ -84,7 +84,7 @@ function editar() {
     dataType: 'json',
     data: dataToSend,
     contentType: 'application/json',
-    url: "http://localhost:8080/api/Room/update",
+    url: "http://129.151.97.16:8080/api/Room/update",
     type: 'PUT',
 
     success: function (response) {
@@ -111,7 +111,7 @@ function eliminar(idElemento) {
   let datoEnvio = JSON.stringify(elemento);
   console.log(datoEnvio);
   $.ajax({
-    url: "http://localhost:8080/api/Room/" + idElemento,
+    url: "http://129.151.97.16:8080/api/Room/" + idElemento,
     type: "DELETE",
     data: datoEnvio,
     datatype: "json",
@@ -127,7 +127,7 @@ function eliminar(idElemento) {
 
 function buscarPorID(idItem) {
   $.ajax({
-    url: "http://localhost:8080/api/Room/" + idItem,
+    url: "http://129.151.97.16:8080/api/Room/" + idItem,
     type: "GET",
     datatype: "JSON",
     success: function (response) {
@@ -153,7 +153,7 @@ function buscarPorID(idItem) {
 
 function consultarCategory() {
   $.ajax({
-    url: "http://localhost:8080/api/Category/all",
+    url: "http://129.151.97.16:8080/api/Category/all",
     type: "GET",
     datatype: "JSON",
     success: function (response) {
@@ -197,7 +197,7 @@ function guardarCategory() {
     dataType: 'json',
     data: dataToSend,
     contentType: 'application/json',
-    url: "http://localhost:8080/api/Category/save",
+    url: "http://129.151.97.16:8080/api/Category/save",
     type: 'POST',
 
     success: function (response) {
@@ -227,7 +227,7 @@ function editarCategory() {
     dataType: 'json',
     data: dataToSend,
     contentType: 'application/json',
-    url: "http://localhost:8080/api/Category/update",
+    url: "http://129.151.97.16:8080/api/Category/update",
     type: 'PUT',
 
     success: function (response) {
@@ -254,7 +254,7 @@ function eliminarCategory(idElemento) {
   let datoEnvio = JSON.stringify(elemento);
   console.log(datoEnvio);
   $.ajax({
-    url: "http://localhost:8080/api/Category/" + idElemento,
+    url: "http://129.151.97.16:8080/api/Category/" + idElemento,
     type: "DELETE",
     data: datoEnvio,
     datatype: "json",
@@ -270,7 +270,7 @@ function eliminarCategory(idElemento) {
 
 function buscarPorIDCategory(idItem) {
   $.ajax({
-    url: "http://localhost:8080/api/Category/" + idItem,
+    url: "http://129.151.97.16:8080/api/Category/" + idItem,
     type: "GET",
     datatype: "JSON",
     success: function (response) {
@@ -292,7 +292,7 @@ function buscarPorIDCategory(idItem) {
 // CLIENT -----------------------#
 function consultarClient() {
   $.ajax({
-    url: "http://localhost:8080/api/Client/all",
+    url: "http://129.151.97.16:8080/api/Client/all",
     type: "GET",
     datatype: "JSON",
     success: function (response) {
@@ -342,7 +342,7 @@ function guardarClient() {
     dataType: 'json',
     data: dataToSend,
     contentType: 'application/json',
-    url: "http://localhost:8080/api/Client/save",
+    url: "http://129.151.97.16:8080/api/Client/save",
     type: 'POST',
 
     success: function (response) {
@@ -374,7 +374,7 @@ function editarClient() {
     dataType: 'json',
     data: dataToSend,
     contentType: 'application/json',
-    url: "http://localhost:8080/api/Client/update",
+    url: "http://129.151.97.16:8080/api/Client/update",
     type: 'PUT',
 
     success: function (response) {
@@ -401,7 +401,7 @@ function eliminarClient(idElemento) {
   let datoEnvio = JSON.stringify(elemento);
   console.log(datoEnvio);
   $.ajax({
-    url: "http://localhost:8080/api/Client/" + idElemento,
+    url: "http://129.151.97.16:8080/api/Client/" + idElemento,
     type: "DELETE",
     data: datoEnvio,
     datatype: "json",
@@ -417,7 +417,7 @@ function eliminarClient(idElemento) {
 
 function buscarPorIDClient(idItem) {
   $.ajax({
-    url: "http://localhost:8080/api/Client/" + idItem,
+    url: "http://129.151.97.16:8080/api/Client/" + idItem,
     type: "GET",
     datatype: "JSON",
     success: function (response) {
@@ -443,7 +443,7 @@ function buscarPorIDClient(idItem) {
 // RESERVATION -----------------------#
 function consultarReservation() {
   $.ajax({
-    url: "http://localhost:8080/api/Reservation/all",
+    url: "http://129.151.97.16:8080/api/Reservation/all",
     type: "GET",
     datatype: "JSON",
     success: function (response) {
@@ -487,7 +487,7 @@ function guardarReservation() {
     dataType: 'json',
     data: dataToSend,
     contentType: 'application/json',
-    url: "http://localhost:8080/api/Reservation/save",
+    url: "http://129.151.97.16:8080/api/Reservation/save",
     type: 'POST',
 
     success: function (response) {
@@ -517,7 +517,7 @@ function editarReservation() {
     dataType: 'json',
     data: dataToSend,
     contentType: 'application/json',
-    url: "http://localhost:8080/api/Reservation/update",
+    url: "http://129.151.97.16:8080/api/Reservation/update",
     type: 'PUT',
 
     success: function (response) {
@@ -544,7 +544,7 @@ function eliminarReservation(idElemento) {
   let datoEnvio = JSON.stringify(elemento);
   console.log(datoEnvio);
   $.ajax({
-    url: "http://localhost:8080/api/Reservation/" + idElemento,
+    url: "http://129.151.97.16:8080/api/Reservation/" + idElemento,
     type: "DELETE",
     data: datoEnvio,
     datatype: "json",
@@ -560,7 +560,7 @@ function eliminarReservation(idElemento) {
 
 function buscarPorIDReservation(idItem) {
   $.ajax({
-    url: "http://localhost:8080/api/Reservation/" + idItem,
+    url: "http://129.151.97.16:8080/api/Reservation/" + idItem,
     type: "GET",
     datatype: "JSON",
     success: function (response) {
@@ -583,7 +583,7 @@ function buscarPorIDReservation(idItem) {
 
 function consultarMessage() {
   $.ajax({
-    url: "http://localhost:8080/api/Message/all",
+    url: "http://129.151.97.16:8080/api/Message/all",
     type: "GET",
     datatype: "JSON",
     success: function (response) {
@@ -624,7 +624,7 @@ function guardarMessage() {
     dataType: 'json',
     data: dataToSend,
     contentType: 'application/json',
-    url: "http://localhost:8080/api/Message/save",
+    url: "http://129.151.97.16:8080/api/Message/save",
     type: 'POST',
 
     success: function (response) {
@@ -653,7 +653,7 @@ function editarMessage() {
     dataType: 'json',
     data: dataToSend,
     contentType: 'application/json',
-    url: "http://localhost:8080/api/Message/update",
+    url: "http://129.151.97.16:8080/api/Message/update",
     type: 'PUT',
 
     success: function (response) {
@@ -680,7 +680,7 @@ function eliminarMessage(idElemento) {
   let datoEnvio = JSON.stringify(elemento);
   console.log(datoEnvio);
   $.ajax({
-    url: "http://localhost:8080/api/Message/" + idElemento,
+    url: "http://129.151.97.16:8080/api/Message/" + idElemento,
     type: "DELETE",
     data: datoEnvio,
     datatype: "json",
@@ -696,7 +696,7 @@ function eliminarMessage(idElemento) {
 
 function buscarPorIDMessage(idItem) {
   $.ajax({
-    url: "http://localhost:8080/api/Message/" + idItem,
+    url: "http://129.151.97.16:8080/api/Message/" + idItem,
     type: "GET",
     datatype: "JSON",
     success: function (response) {
@@ -717,7 +717,7 @@ function buscarPorIDMessage(idItem) {
 
 function consultarCompletados() {
   $.ajax({
-    url: "http://localhost:8080/api/Reservation/report-status",
+    url: "http://129.151.97.16:8080/api/Reservation/report-status",
     type: "GET",
     datatype: "JSON",
     success: function (response) {
@@ -733,7 +733,7 @@ function consultarCompletados() {
 
 function consultarClientes() {
   $.ajax({
-    url: "http://localhost:8080/api/Reservation/report-clients",
+    url: "http://129.151.97.16:8080/api/Reservation/report-clients",
     type: "GET",
     datatype: "JSON",
     success: function (response) {
@@ -774,7 +774,7 @@ function guardarReporte() {
     date: $("#fecha2Reporte").val(),
   }
     $.ajax({
-    url: "http://localhost:8080/api/Reservation/report-dates/" + date1.date + "/" + date2.date,
+    url: "http://129.151.97.16:8080/api/Reservation/report-dates/" + date1.date + "/" + date2.date,
     type: "GET",
     datatype: "JSON",
     success: function (response) {
